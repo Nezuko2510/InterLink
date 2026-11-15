@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Background */
+body {
+  height: 100vh;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Main container */
+.auth-container {
+  background: #8181a0;
+  width: 320px;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 18px 35px rgba(211, 209, 188, 0.4);
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  margin-bottom: 20px;
+  background: #ecf0f1;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-weight: bold;
+  color: #34495e;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.tabs button.active {
+  background: #1abc9c;
+  color: #ffffff;
+}
+
+/* Forms */
+.form {
+  display: none;
+  animation: fadeIn 0.5s ease;
+}
+
+.form.active {
+  display: block;
+}
+
+/* Input fields */
+.form input {
+  width: 100%;
+  padding: 12px;
+  margin: 12px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+.form input:focus {
+  border-color: #1abc9c;
+}
+
+/* Buttons */
+.form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 10px;
+  background: #1abc9c;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form button:hover {
+  background: #16a085;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .auth-container {
+    width: 90%;
+    padding: 25px;
+  }
+}

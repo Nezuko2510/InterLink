@@ -1,0 +1,122 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+  background-color: #7a83aa;
+  padding: 20px;
+}
+
+header h1 {
+    font-family:'Papyrus', fantasy;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #000;
+    text-shadow:
+        0px 3px 6px rgba(0, 0, 0, 0.4),
+        0px 0px 10px rgb(12, 24, 56);
+}
+
+/* Header */
+/* header {
+  text-align: center;
+  margin-bottom: 30px;
+} */
+
+.banner {
+  background: linear-gradient(135deg, #7f8db5, #8e9ecb);
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 15px;
+  margin-bottom: 40px;
+
+  /* Shadow below banner */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.banner h1 {
+  font-family: Papyrus, fantasy;
+  font-size: 2.8rem;
+  color: #000;
+  margin-bottom: 10px;
+
+  /* Shadow below title */
+  text-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+}
+
+.banner p {
+  font-size: 1.3rem;
+  color: #0c207f;
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+/* Product Card */
+.product-card {
+  background: #bdc5d1;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.product-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(196, 175, 90, 0.858);
+}
+
+/* Product Image */
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Product Name */
+.product-card h3 {
+  font-size: 1.2rem;
+  color: #121212;
+  margin-bottom: 8px;
+}
+
+/* Price */
+.price {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #1ead5a;
+}
+
+/* Responsive adjustment */
+@media (max-width: 600px) {
+  .banner h1 {
+    font-size: 2rem;
+  }
+
+  .banner p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .product-card img {
+    height: 160px;
+  }
+}
